@@ -36,7 +36,7 @@ class _EnumPickerState<T extends Enum> extends State<EnumPicker<T>> {
               value = widget.values[index];
             },
             itemBuilder: (context, index) =>
-                Center(child: Text(widget.values[index].toString())),
+                Center(child: Text(widget.values[index].name)),
           ),
         ),
         SafeArea(
